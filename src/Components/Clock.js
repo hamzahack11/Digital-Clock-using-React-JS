@@ -117,7 +117,7 @@ export default function Clock() {
         
 
         <div className="time">
-          <span className="hour">{addZero(hour+12)}</span>
+          <span className="hour">{addZero(hour)}</span>
           <span className="dots">:</span>
           <span className="minutes">{addZero(minutes)}</span>
           <div className="right-side">
