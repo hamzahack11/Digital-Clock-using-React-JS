@@ -114,8 +114,6 @@ export default function Clock() {
               ></div>
             </li>
           </ul>
-        
-
         <div className="time">
           <span className="hour">{addZero(hour)}</span>
           <span className="dots">:</span>
