@@ -23,7 +23,7 @@ export default function Clock() {
   const [menuBtn, setMenuBtn] = useState(false);
 
 
-  // following state is used for toggling 12hr to 24hr
+  // following state is used for toggling 12hr to 24h
   const [hour, setHour] = useState(currentTime.getHours());
 
   // to get complete Time from default object Date
