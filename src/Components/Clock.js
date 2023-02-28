@@ -107,7 +107,7 @@ export default function Clock() {
               <span className="clock-formate-text">Switch Time Format</span>
               <div
                 className={
-                  isActive ? "format-switch-btn active" : "format-switch-btn"
+                  isActive ? "format-switch-btn active":"format-switch-btn"
                 }
                 onClick={handleClick}
                 data-format={dataset ? "24" : "12"}
