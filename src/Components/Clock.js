@@ -4,13 +4,14 @@ import "./Clock.css";
 export default function Clock() {
   let time = new Date();
 
-  let hour12 = new Date().getHours() - 12;
+  // let hour12 = new Date().getHours();
+
 
   // using State
   const [currentTime, setCurrentTime] = useState(time);
 
   // following state is used for toggling data-format attibute
-  const [dataset, setDataSet] = useState(false);
+  const [dataset, setDataSet] = useState(true);
 
   // following state is used for toggling className
   const [isActive, setIsActive] = useState(false);
@@ -23,7 +24,7 @@ export default function Clock() {
 
 
   // following state is used for toggling 12hr to 24hr
-  const [hour, setHour] = useState(hour12);
+  const [hour, setHour] = useState(currentTime.getHours());
 
   // to get complete Time from default object Date
 
@@ -87,7 +88,7 @@ export default function Clock() {
       // console.log(e.target.getElementsByClassName('hour').value);
       setHour(time.getHours());
     } else {
-      setHour(hour12);
+      setHour(time.getHours()-12);
     }
   };
   // to update time in every 1000 milisec we can use setInterval();
@@ -116,7 +117,7 @@ export default function Clock() {
         
 
         <div className="time">
-          <span className="hour">{addZero(hour)}</span>
+          <span className="hour">{addZero(hour+12)}</span>
           <span className="dots">:</span>
           <span className="minutes">{addZero(minutes)}</span>
           <div className="right-side">
