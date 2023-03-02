@@ -89,7 +89,7 @@ export default function Clock() {
       // console.log(e.target.getElementsByClassName('hour').value);
       setHour(time.getHours());
     } else {
-      setHour(time.getHours()-12);
+      setHour(time.getHours()+12);
     }
   };
   // to update time in every 1000 milisec we can use setInterval();
@@ -116,7 +116,7 @@ export default function Clock() {
             </li>
           </ul>
         <div className="time">
-          <span className="hour">{hour}</span>
+          <span className="hour">{hour-12}</span>
           <span className="dots">:</span>
           <span className="minutes">{addZero(minutes)}</span>
           <div className="right-side">
