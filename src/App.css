@@ -6,3 +6,12 @@
 
 
 
+.main{
+
+  background-color: #2e2e44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eeee;
+  padding-top: 10px;
+}

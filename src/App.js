@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
-import Clock from "./Components/Clock.js";
-var ReactDOM = require('react-dom');
+import DigitalClock from "../src/Components/Clock";
 
-const App=()=>{
+function App() {
   return (
-    <Clock />
+    <div>
+      <h1  className="main">Digital Clock By Hamza Fayaz</h1>
+      <DigitalClock />
+    </div>
   );
 }
 
